@@ -3,127 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    /* The Modal (background) */
-    .modal {
-      display: none;
-      /* Hidden by default */
-      position: fixed;
-      /* Stay in place */
-      z-index: 1;
-      /* Sit on top */
-      padding-top: 100px;
-      /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%;
-      /* Full width */
-      height: 100%;
-      /* Full height */
-      overflow: auto;
-      /* Enable scroll if needed */
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(0, 0, 0, 0.4);
-      /* Black w/ opacity */
-	  backdrop-filter: blur(10px);
-	  /* backdrop filter/ opacity */
-    }
-
-    /* Modal Content */
-    .modal-content {
-      position: relative;
-      background-color: #fefefe;
-      margin: auto;
-      padding: 0;
-      border: 1px solid #8d8d97;
-      width: 80%;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      -webkit-animation-name: animatetop;
-      -webkit-animation-duration: 0.4s;
-      animation-name: animatetop;
-      animation-duration: 0.4s
-    }
-
-    /* Add Animation */
-    @-webkit-keyframes animatetop {
-      from {top:-300px; opacity:0} 
-      to {top:0; opacity:1}
-    }
-
-    @keyframes animatetop {
-      from {top:-300px; opacity:0}
-      to {top:0; opacity:1}
-    }
-
-    /* The Close Button */
-    .close {
-      color: white;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      padding-top: 1.2rem;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    /* Modal CSS */
-    .modal-header {
-      padding: 1px 16px;
-      background-color: #2327be;
-      color: white;
-      text-shadow: 0.8px 0.8px #8d8d97;
-    }
-
-    .modal-body {
-      padding: 2px 16px;
-      max-height: 300px;
-      overflow-y: auto;
-      overflow-x: hidden;
-    }
-
-    .modal-footer {
-      padding: 2px 16px;
-      background-color: #2327be;
-      color: white;
-      text-shadow: 0.8px 0.8px #8d8d97;
-    }
-
-    /* Posisition center DIV */
-    .center {
-      margin: auto;
-      width: 80%;
-      border: 3px solid #2327be;
-      padding: 5px;
-    }
-
-    .center-text {
-      text-align: center;
-      text-shadow: 0.8px 0.8px #8d8d97;
-    }
-
-    /* Custom button */
-    .button {
-      background-color: #2327be;
-      /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -132,7 +12,7 @@
   <div class="center">
     <h2 class="center-text">PRETEST FRONTEND DEVELOPER - RENOS.ID</h2>
     <div class="center-text">
-      <a href="javascript:void(0)" id="clickButton" class="button">OPEN MODAL</a>
+      <button id="clickButton" class="button">OPEN MODAL</button>
     </div>
   </div>
 
@@ -141,80 +21,27 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h2>MODAL HEADER</h2>
-      </div>
-      <div class="modal-body">
-        <p>What is Lorem Ipsum?</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.</p>
-        <p>Why do we use it?</p>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
-          packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
-          will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).</p>
-        <p>Where does it come from?</p>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-          literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-          College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-          and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
-          Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-          Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-          1.10.32.</p>
-        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
-          1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original
-          form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-      </div>
-      <div class="modal-footer">
-        <h3>MODAL FOOTER</h3>
-      </div>
+      <section>
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <div id="headerData"></div>
+        </div>
+      </section>
+      <section>
+        <div class="modal-body">
+          <div id="bodyData"></div>
+        </div>
+      </section>
+      <section>
+        <div class="modal-footer">
+          <div id="footerData"></div>
+        </div>
+      </section>
     </div>
 
   </div>
 
-  <script>
-    // Get the modal
-    var modal = document.getElementById("mainModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("clickButton");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function () {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
-    // When the user ESC, close it
-    document.onkeydown = function (evt) {
-      evt = evt || window.event;
-      if (evt.keyCode == 27) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
+  <script src="modal.js" type="text/javascript"></script>
 
 </body>
 
